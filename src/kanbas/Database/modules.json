@@ -1,0 +1,30 @@
+[
+   
+    {
+      "_id": "M102",
+      "name": "Resources",
+      "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+      "course": "RS104"
+    },
+    {
+      "_id": "M103",
+      "name": "Required Textbook",
+      "description": "Principles of rocket nozzle design and performance optimization.",
+      "course": "RS104"
+    },
+    {
+        "_id": "M104",
+        "name": "week0 - INTRO",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS104"
+      }
+      ,
+      {
+          "_id": "M104",
+          "name": "week1 - HTML",
+          "description": "Principles of rocket nozzle design and performance optimization.",
+          "course": "RS104"
+        }
+
+    
+]

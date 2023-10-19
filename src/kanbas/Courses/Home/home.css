@@ -1,0 +1,11 @@
+.list-group-home {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #f4f2f2;
+    color:rgb(26, 27, 27);
+    height: 50px;
+    margin-top: 5px
+
+
+  }

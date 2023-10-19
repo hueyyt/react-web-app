@@ -1,0 +1,203 @@
+<head><link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="screen.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/fontawesome.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/all.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.min.css" rel="stylesheet"/>
+<link href="/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+
+</head>
+
+<style>
+    /* Set the sidebar width */
+    .sidebar {
+        width: 85px; /* Set this between 75px and 85px */
+        background-color: black;
+    }
+    
+    /* Set the spacing and padding for the nav items */
+    .nav-item {
+        margin: 7px; /* Set this between 5px and 10px */
+        width:67px;
+    }
+    
+    .nav-link {
+        padding: 10px; /* Set this between 5px and 10px */
+        text-align: center; /* Centering text */
+        display: block;
+        font-size: 9px;
+    }
+    
+    /* Centering icons */
+    .nav-link i {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    </style>
+
+
+
+
+<table border="1" width="100%" >
+<td valign="top">
+
+
+    <div  class="sidebar">
+    
+        <ul class="nav flex-column wd-bg-color-black ">
+            <li class="nav-item wd-bg-color-white">
+                <a class="nav-link active wd-fg-color-red" href="/kanbas/Account/Profile/screen.html"><i class="fa fa-user wd-fg-color-black fa-2x"></i><br>Account</a>
+            </li>
+            <li class="nav-item wd-bg-color-black">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Dashboard/screen.html"><i class="fa fa-dashboard wd-fg-color-red fa-2x"></i><br>Dashboard</a>
+            </li>
+            <li class="nav-item wd-bg-color-black">
+                <a class="nav-link wd-fg-color-red" href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book wd-fg-color-red fa-2x"></i><br>Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Calendar/screen.html"><i class="fa fa-calendar wd-fg-color-red fa-2x"></i><br>
+                    Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Inbox/screen.html"><i class="fa fa-inbox wd-fg-color-red fa-2x"></i><br>Inbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/History/screen.html"><i class="fa fa-history wd-fg-color-red fa-2x"></i><br>History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Studio/screen.html"><i class="fa fa-stroopwafel wd-fg-color-red fa-2x"></i><br>Studio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Common/screen.html"><i class="fa fa-spinner wd-fg-color-red fa-2x"></i><br>Common</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Help/screen.html"><i class="fa fa-question wd-fg-color-red fa-2x"></i><br>Help</a>
+            </li>
+        </ul>
+         
+    </div>
+</td>
+
+
+
+
+<td valign="top">
+
+
+    
+<style>
+    .sidebar {
+        width: 75px;
+        padding-right: 0px; /* Space between sidebar and other content */
+        padding-left: 0px;
+        background-color: white;
+    }
+    .link {
+        width: 200px;
+        display: block;
+        color: red;
+        text-decoration: none;
+        padding: 8px 0; /* Adjust this value to control space between links */
+        margin-left: 10px; /* Space from left border when selected */
+        white-space: wrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .link.selected {
+        width: 200px;
+        color: black;
+        border-left: 2px solid black;
+    }
+</style>
+</head>
+<body>
+<style>
+    .sidebar2 {
+        width: 200px;
+        padding-right: -200px; /* Removed padding from the right */
+        padding-left: -200px;
+        margin-left: 10px; /* Adjust this value to move the sidebar closer to the first sidebar */
+        background-color: white;
+    }
+    .link {
+        display: block;
+        color: red;
+        text-decoration: none;
+        padding: 8px 20px; /* Added 20px padding to the right to maintain 20px space from the right content */
+        margin-left: 10px; /* Space from left border when selected */
+        white-space: wrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .link.selected {
+        color: black;
+        border-left: 2px solid black;
+    }
+</style>
+<div class="sidebar2">
+    <a href="#" class="link">Notification</a>
+    <a href="#" class="link selected">Profile</a>
+    <a href="#" class="link">Files</a>
+    <a href="#" class="link">Settings</a>
+    <a href="#" class="link">ePortfolios</a>
+    <a href="#" class="link">Shared     Content</a>
+    <a href="#" class="link">The    Hub</a>
+    <a href="#" class="link">Qwickly   Course   Tools</a>
+    <a href="#" class="link">Global   Announcement</a>
+    
+   
+</div>
+
+</body>
+</html>
+
+</td>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<td valign="top">
+    <div >  
+        <i class="fas fa-user fa-4x"></i>  <!-- Font Awesome User Icon -->
+        <h2>Jose Annuzation</h2>  <!-- User Full Name -->
+    </div>
+   <br>
+   <br>
+   
+
+    <h5>Contact</h5>
+    No registered services, you can add some on the settings page.
+</br>
+</br>
+</br>
+    <h5>Biography</h5>
+    Faculty,software Engineer, AI, SPACE, and renewables enthusiast
+</br>
+</br></br>
+
+    <h5>Links</h5>
+    <a href="https://www.youtube.com/watch?v=_Hq9n7cc8rk&feature=youtu.be&themeRefresh=1">YouTube</a>
+</td>
+
+<td valign="top"> <div>
+    <a href="/kanbas/Account/Profile/edit.html">
+        <button type="button" class="btn btn-light"><i class="fas fa-pencil-alt fa"></i>Edit profile</button>
+        
+    </a>
+</div></td>
+

@@ -1,0 +1,7 @@
+:root {
+    --bs-breadcrumb-divider: '>';
+  }
+  
+  .list-group{
+        width: 1300px;
+  }

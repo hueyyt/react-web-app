@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open screen.html",
+            "file": "/Users/taoyuam/Desktop/my-node-project/webdev/kanbas-react-web-app/public/kanbas/Courses/Setting/CourseDetail/screen.html"
+        }
+    ]
+}

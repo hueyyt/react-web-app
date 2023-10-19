@@ -1,0 +1,23 @@
+.list-group-kanbas-item {
+    background-color: white !important;
+    color: red !important;
+    display: block;          /* 继续使用块级显示 */
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-top: 5px;       /* 增加上边距以分隔项目 */
+
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.list-group-kanbas-item.active {
+    background-color: white !important;
+    color: rgb(21, 20, 20) !important;
+    display: block;          /* 继续使用块级显示 */
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-top: 10px;       /* 增加上边距以分隔项目 */
+    border-left: 4px solid black; /* 添加黑色竖线 */
+    text-overflow: ellipsis;
+    text-align: left;
+}

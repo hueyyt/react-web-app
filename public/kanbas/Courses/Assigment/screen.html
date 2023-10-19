@@ -1,0 +1,575 @@
+<head><link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="screen.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/fontawesome.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/all.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/v4-shims.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/svg-with-js.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/solid.min.css" rel="stylesheet"/>
+    <link href="/vendors/fontawesome/css/brands.min.css" rel="stylesheet"/>
+<link href="/vendors/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<style>
+    /* Set the sidebar width */
+    .sidebar {
+        width: 85px; /* Set this between 75px and 85px */
+        background-color: black;
+    }
+    
+    /* Set the spacing and padding for the nav items */
+    .nav-item {
+        margin: 7px; /* Set this between 5px and 10px */
+        width:67px;
+    }
+    
+    .nav-link {
+        padding: 10px; /* Set this between 5px and 10px */
+        text-align: center; /* Centering text */
+        display: block;
+        font-size: 9px;
+    }
+    
+    /* Centering icons */
+    .nav-link i {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    </style>
+
+<style>
+    .sidebar {
+        width: 75px;
+        padding-right: 0px; /* Space between sidebar and other content */
+        padding-left: 0px;
+        background-color: white;
+        position: relative;
+        
+    }
+    .link {
+        width: 200px;
+        display: block;
+        color: red;
+        text-decoration: none;
+        padding: 8px 0; /* Adjust this value to control space between links */
+        margin-left: 10px; /* Space from left border when selected */
+        white-space: wrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .link.selected {
+        width: 200px;
+        color: black;
+        border-left: 2px solid black;
+    }
+</style>
+</head>
+<style>
+   
+    .course-card {
+        width: 260px;
+        margin: 15px 0; 
+    }
+    .course-grid {
+        margin-left: calc(85px + 10px); /* Sidebar width + 10px margin */
+    }
+    .nav-item.active {
+        background-color: white;
+        color: red;
+    }
+    .nav-item.active .fa,
+    .nav-item.active .fas {
+        color: red;
+    }
+</style>
+</head>
+<style>
+    .sidebar2 {
+        width: 200px;
+        padding-right:0px; /* Removed padding from the right */
+        padding-left: 0px;
+        margin-left: -40px; /* Adjust this value to move the sidebar closer to the first sidebar */
+        background-color: white;
+    }
+    .link {
+        display: block;
+        color: red;
+        text-decoration: none;
+        padding: 8px 20px; /* Added 20px padding to the right to maintain 20px space from the right content */
+        margin-left: 10px; /* Space from left border when selected */
+        white-space: wrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+    .link.selected {
+        color: black;
+        border-left: 2px solid black;
+    }
+</style>
+   <!-- list1-->
+<table border="1" width="100%" >
+<td valign="top">
+
+
+    <div  class="d-none d-lg-block sidebar">
+    
+        <ul class="nav flex-column wd-bg-color-black ">
+            <li class="nav-item ">
+                <a class="nav-link active wd-fg-color-white" href="/kanbas/Account/Profile/screen.html"><i class="fa fa-user wd-fg-color-white fa-2x"></i><br>Account</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Dashboard/screen.html"><i class="fa fa-dashboard wd-fg-color-red fa-2x"></i><br>Dashboard</a>
+            </li>
+            <li class="nav-item wd-bg-color-white">
+                <a class="nav-link wd-fg-color-red" href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book wd-fg-color-red fa-2x"></i><br>Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Calendar/screen.html"><i class="fa fa-calendar wd-fg-color-red fa-2x"></i><br>
+                    Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Inbox/screen.html"><i class="fa fa-inbox wd-fg-color-red fa-2x"></i><br>Inbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/History/screen.html"><i class="fa fa-history wd-fg-color-red fa-2x"></i><br>History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Studio/screen.html"><i class="fa fa-stroopwafel wd-fg-color-red fa-2x"></i><br>Studio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Common/screen.html"><i class="fa fa-spinner wd-fg-color-red fa-2x"></i><br>Common</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link wd-fg-color-white" href="/Kanbas/Help/screen.html"><i class="fa fa-question wd-fg-color-red fa-2x"></i><br>Help</a>
+            </li>
+        </ul>
+         
+    </div>
+</td> 
+<td valign="top">
+
+
+
+<!-- main -->
+
+<body>
+<main class="container-fluid">
+    <style>
+        .breadcrumb-item + .breadcrumb-item:before {
+            content: ">";
+        }
+        .custom-link {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="mt-4" style="font-size: 20px;">
+        <nav aria-label="breadcrumb">
+            <div class="d-flex justify-content-between w-100">
+                <ol class="breadcrumb mb-0" style="background-color:azure">
+                    <button type="button" class="btn btn-light"><i class="fa fa-bars"></i></button>
+                    <li class="breadcrumb-item"><a class="custom-link" href="#">CS5610.17387.202410</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                </ol>
+                <button type="button" class="btn btn-light"><i class="fa fa-glasses"></i>Student View</button>
+            </div>
+        </nav>
+    </h1>
+    <hr/>
+
+    
+    
+    
+    <h2 style="font-size: 12px;">202410_2 Fall 2023 Semester Full Term Grad</h2>
+</header>
+<section class="row " style="margin-left: 40px;">  
+    <!-- list2 -->
+   
+        <div class=" d-none d-lg-block sidebar2" >
+        
+            <a href="/kanbas/Courses/Home/screen.html" class="link">Home</a>
+            <a href="/kanbas/Courses/Modules/index.html" class="link ">Modules</a>
+            <a href="/kanbas/Courses/Pizza/index.html"class="link">Pizza</a>
+            <a href="#"class="link">Zoom Meeting</a>
+            <a href="/kanbas/Courses/Assigment/screen.html"class="link selected">Assigment</a>
+            <a href="#"class="link">Quizzes</a>
+            <a href="/kanbas/Courses/Grades/screen.html"class="link">Grades</a>
+            <a href="#"class="link">People</a>
+            <a href="#"class="link">Panopto Video</a>
+           <a href="#"class="link">Discussions</a>
+         <a href="#"class="link">Announcements</a>
+            <a href="#"class="link">Pages</a>
+            <a href="#"class="link">Files</a>
+            <a href="#"class="link">Rubrics</a>
+            <a href="#"class="link">Outcomes</a>
+           <a href="#"class="link">collaborations</a>
+            <a href="#"class="link">Syllabus</a>
+            <a href="/kanbas/Courses/Setting/CourseDetail/screen.html"class="link">Settings</a>
+        
+           
+    </div>
+
+
+  <!-- list3-->
+
+  <style>
+    .sidebar-sm {
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: none; /* Hidden by default */
+    }
+    .sidebar-text {
+    flex-grow: 1;
+    text-align: center;
+    color: white; /* Or any other color you'd prefer */
+}
+    @media (max-width: 767px) {
+        .sidebar-sm {
+            display: block; /* Show sidebar on small screens */
+        }
+    }
+  </style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Sidebars Example</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJ supreme="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.sidebar-left {
+    width: 200px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: auto;
+    background-color: white;
+    color: red;
+    transition: left 0.3s
+   ;
+}
+.sidebar-left.open {
+    left: 0;
+}
+
+.sidebar-top {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    height: auto;
+    background-color:white;
+    color: red;
+    transition: top 0.3s;
+}
+.sidebar-top.open {
+    top: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar-sm d-sm-block d-md-none d-flex justify-content-between p-3">
+<i class="fa fa-bars wd-fg-color-white" onclick="toggleSidebar('left')" style="cursor: pointer;"></i>
+<div class="sidebar-text">CS5610.17387.202410 moduels</div>
+<i class="fa fa-arrow-circle-down wd-fg-color-white" onclick="toggleSidebar('top')" style="cursor: pointer;"></i>
+</div>
+
+<div class="sidebar-left" id="sidebar-left">
+<!-- Left Sidebar content -->
+<p><div  class="sidebar">
+
+    <ul class="nav flex-column  ">
+        <li class="nav-item ">
+            <a class="nav-link active wd-fg-color-red" href="/kanbas/Account/Profile/screen.html"><i class="fa fa-user wd-fg-color-red fa-2x"></i><br>Account</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Dashboard/screen.html"><i class="fa fa-dashboard wd-fg-color-red fa-2x"></i><br>Dashboard</a>
+        </li>
+        <li class="nav-item wd-bg-color-white">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book wd-fg-color-red fa-2x"></i><br>Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Calendar/screen.html"><i class="fa fa-calendar wd-fg-color-red fa-2x"></i><br>
+                Calendar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Inbox/screen.html"><i class="fa fa-inbox wd-fg-color-red fa-2x"></i><br>Inbox</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/History/screen.html"><i class="fa fa-history wd-fg-color-red fa-2x"></i><br>History</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Studio/screen.html"><i class="fa fa-stroopwafel wd-fg-color-red fa-2x"></i><br>Studio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Common/screen.html"><i class="fa fa-spinner wd-fg-color-red fa-2x"></i><br>Common</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link wd-fg-color-red" href="/Kanbas/Help/screen.html"><i class="fa fa-question wd-fg-color-red fa-2x"></i><br>Help</a>
+        </li>
+    </ul>
+     
+</div></p>
+<i class="fa fa-times wd-fg-color-white close-btn" onclick="closeSidebar('left')" style="cursor: pointer;"></i>
+</div>
+
+<div class="sidebar-top" id="sidebar-top">
+<!-- Top Sidebar content -->
+ <p><div >
+    
+    <a href="/kanbas/Courses/Home/screen.html" class="link">Home</a>
+    <a href="/kanbas/Courses/Modules/index.html" class="link selected">Modules</a>
+    <a href="/kanbas/Courses/Pizza/index.html"class="link">Pizza</a>
+    <a href="#"class="link">Zoom Meeting</a>
+    <a href="/kanbas/Courses/Assigment/screen.html"class="link">Assigment</a>
+    <a href="#"class="link">Quizzes</a>
+    <a href="/kanbas/Courses/Grades/screen.html"class="link">Grades</a>
+    <a href="#"class="link">People</a>
+    <a href="#"class="link">Panopto Video</a>
+   <a href="#"class="link">Discussions</a>
+ <a href="#"class="link">Announcements</a>
+    <a href="#"class="link">Pages</a>
+    <a href="#"class="link">Files</a>
+    <a href="#"class="link">Rubrics</a>
+    <a href="#"class="link">Outcomes</a>
+   <a href="#"class="link">collaborations</a>
+    <a href="#"class="link">Syllabus</a>
+    <a href="/kanbas/Courses/Setting/CourseDetail/screen.html"class="link">Settings</a>
+
+   
+</div>
+
+</p>
+<i class="fa fa-times wd-fg-color-white close-btn" onclick="closeSidebar('top')" style="cursor: pointer;"></i>
+</div>
+
+<script>
+function toggleSidebar(type) {
+    var sidebar;
+    if (type === 'left') {
+        sidebar = document.getElementById('sidebar-left');
+    } else if (type === 'top') {
+        sidebar = document.getElementById('sidebar-top');
+    }
+    if (sidebar) {
+        if (sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+        } else {
+            sidebar.classList.add('open');
+        }
+    }
+}
+
+function closeSidebar(type) {
+    var sidebar;
+    if (type === 'left') {
+        sidebar = document.getElementById('sidebar-left');
+    } else if (type === 'top') {
+        sidebar = document.getElementById('sidebar-top');
+    }
+    if (sidebar) {
+        sidebar.classList.remove('open');
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="col-lg-7 col-md-8 col-sm-12">
+<header class="d-none d-md-block">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <input type="text" class="form-control" value="search for assignment" id="search-box" />
+        <div style="display: flex;">
+            <button type="button" class="btn btn-secondary mr-2">+ Group</button>
+            <button type="button" class="btn btn-danger">+ Assignment</button>
+        </div>
+    </div>
+    
+    
+    <hr/>
+    
+</header>
+
+
+<style>
+    .custom-link {
+        color: red;
+        text-decoration: none;
+    }
+</style>
+    
+
+    
+   
+
+    
+    
+
+<style>
+    .list-group-head {
+        position: relative;
+        padding-left: 2.5rem;
+    }
+    .list-group-item {
+        position: relative;
+        padding-left: 2.5rem;
+        border-left: 4px solid green;
+    }
+  
+    .icon-left {
+        margin-right: 0.5rem;
+        color: green;
+    }
+    .icon-right {
+        position: absolute;
+        right: 1rem;
+        top: 15px;
+        color:green;
+    }
+    .subtext {
+        display: block;
+        font-size: smaller;
+        color: grey;
+    }
+    
+    .list-group-item-secondary {
+        border-left: none;
+    }
+    .link-text {
+    color: black;
+    text-decoration: none; /* Removes the underline normally added to links */
+}
+</style>
+
+<div class="list-group">
+     <li class="list-group-item list-group-item-secondary"  >Assigments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-outline-secondary" disabled>40% of total</button>
+        <i class="icon-right fas fa-plus"></i>
+     </li>
+
+    <button type="button" class="list-group-item list-group-item-action">
+    <i class="icon-left fas fa-newspaper"></i>
+    <a href="edit.html" class="link-text">A1 SETUP</a> 
+    <span class="subtext">week0</span>
+    <i class="icon-right fas fa-check-circle"></i>
+</button>
+  <button type="button" class="list-group-item list-group-item-action">
+      <i class="icon-left fas fa-newspaper"></i>
+      <a href="edit.html" class="link-text">A2 HTML</a> 
+      <span class="subtext">week1</span>
+      <i class="icon-right fas fa-check-circle"></i>
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">
+      <i class="icon-left fas fa-newspaper"></i>
+      <a href="edit.html" class="link-text">A3 CSS</a> 
+      <span class="subtext">week2</span>
+      <i class="icon-right fas fa-check-circle"></i>
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">
+      <i class="icon-left fas fa-newspaper"></i>
+      <a href="edit.html" class="link-text">A4 Bootstrap</a> 
+      <span class="subtext">week3</span>
+      <i class="icon-right fas fa-check-circle"></i>
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">
+      <i class="icon-left fas fa-newspaper"></i>
+      <a href="edit.html" class="link-text">A5 JavaScript</a> 
+      <span class="subtext">week4</span>
+      <i class="icon-right fas fa-check-circle"></i>
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">
+      <i class="icon-left fas fa-newspaper"></i>
+      <a href="edit.html" class="link-text">A6 React</a> 
+      
+      <span class="subtext">week5</span>
+      <i class="icon-right fas fa-check-circle"></i>
+  </button>
+
+  
+
+</div>
+
+   
+
+        
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+

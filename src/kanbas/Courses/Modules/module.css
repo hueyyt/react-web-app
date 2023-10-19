@@ -1,0 +1,16 @@
+.list-group-item-modules {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: #f8f6f6;
+    color:rgb(26, 27, 27);
+    height: 50px;
+    margin-top: 30px
+
+
+  }
+  
+
+
+  
+  
